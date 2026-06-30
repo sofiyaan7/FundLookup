@@ -11,10 +11,8 @@ export interface FundSummary {
 }
 
 export const currentFunds: FundSummary[] = [
-  { id: 'f-1', slug: 'flexicap', name: 'HDFC Flexicap Fund', category: 'Equity — Flexicap', aum: '₹18,420 Cr', expenseRatio: '0.92%', returns1Y: '+22.4%', startDate: '12 Jan 2020', status: 'Active' },
-  { id: 'f-2', slug: 'large-midcap', name: 'HDFC Large & Midcap Fund', category: 'Equity — Large & Midcap', aum: '₹14,100 Cr', expenseRatio: '0.88%', returns1Y: '+19.7%', startDate: '03 Mar 2020', status: 'Active' },
-  { id: 'f-3', slug: 'focused-equity', name: 'HDFC Focused Equity Fund', category: 'Equity — Focused', aum: '₹6,830 Cr', expenseRatio: '0.95%', returns1Y: '+24.1%', startDate: '22 Jul 2021', status: 'Active' },
-  { id: 'f-4', slug: 'business-cycle', name: 'HDFC Business Cycle Fund', category: 'Equity — Thematic', aum: '₹3,500 Cr', expenseRatio: '1.02%', returns1Y: '+17.9%', startDate: '14 Feb 2022', status: 'Active' },
+  { id: 'f-1', slug: 'hdfc-flexi-cap', name: 'HDFC Flexi Cap Fund', category: 'Equity — Flexi Cap', aum: '₹18,420 Cr', expenseRatio: '0.92%', returns1Y: '+22.4%', startDate: '31 Oct 2010', status: 'Active' },
+  { id: 'f-2', slug: 'hdfc-focused', name: 'HDFC Focused Fund', category: 'Equity — Focused', aum: '₹6,830 Cr', expenseRatio: '0.95%', returns1Y: '+24.1%', startDate: '22 Jul 2021', status: 'Active' },
 ]
 
 export interface PreviousFund {
@@ -29,11 +27,16 @@ export interface PreviousFund {
 }
 
 export const previousFunds: PreviousFund[] = [
-  { id: 'pf-1', name: 'Invesco India Business Cycle Fund', category: 'Equity — Thematic', joinedDate: 'Jan 2016', exitedDate: 'Dec 2020', tenure: '5 yrs', performance: '+15.2% CAGR', reasonForExit: 'Transitioned to HDFC Mutual Fund' },
-  { id: 'pf-2', name: 'Invesco India Contra Fund', category: 'Equity — Contra', joinedDate: 'Mar 2016', exitedDate: 'Dec 2020', tenure: '4.8 yrs', performance: '+13.9% CAGR', reasonForExit: 'Transitioned to HDFC Mutual Fund' },
-  { id: 'pf-3', name: 'Fidelity India Growth Fund', category: 'Equity — Large Cap', joinedDate: 'Jun 2012', exitedDate: 'Feb 2016', tenure: '3.7 yrs', performance: '+14.6% CAGR', reasonForExit: 'Fund merged post Fidelity-L&T acquisition' },
-  { id: 'pf-4', name: 'Invesco India Mid Cap Fund', category: 'Equity — Midcap', joinedDate: 'Jul 2017', exitedDate: 'Dec 2020', tenure: '3.4 yrs', performance: '+16.1% CAGR', reasonForExit: 'Transitioned to HDFC Mutual Fund' },
-  { id: 'pf-5', name: 'Kotak Equity Opportunities Fund', category: 'Equity — Large & Midcap', joinedDate: 'Apr 2009', exitedDate: 'May 2012', tenure: '3.1 yrs', performance: '+12.8% CAGR', reasonForExit: 'Moved to portfolio management role at Fidelity' },
+  { id: 'pf-1', name: 'HDFC ELSS Tax Saver Fund', category: 'Equity — ELSS', joinedDate: '2020', exitedDate: '2021', tenure: '1 yr', performance: '+16.8% CAGR', reasonForExit: 'Reallocated to newer flagship mandates' },
+  { id: 'pf-2', name: 'HDFC Value Fund', category: 'Equity — Value', joinedDate: '2020', exitedDate: '2021', tenure: '1 yr', performance: '+15.4% CAGR', reasonForExit: 'Transitioned to focused strategy allocation' },
+  { id: 'pf-3', name: 'Invesco India Contra Fund', category: 'Equity — Contra', joinedDate: '2014', exitedDate: '2020', tenure: '6 yrs', performance: '+13.9% CAGR', reasonForExit: 'Transitioned to HDFC Mutual Fund' },
+  { id: 'pf-4', name: 'Invesco India Mid Cap Fund', category: 'Equity — Midcap', joinedDate: '2012', exitedDate: '2020', tenure: '8 yrs', performance: '+16.1% CAGR', reasonForExit: 'Transitioned to HDFC Mutual Fund' },
+  { id: 'pf-5', name: 'Invesco India Large & Mid Cap Fund', category: 'Equity — Large & Midcap', joinedDate: '2009', exitedDate: '2014', tenure: '5 yrs', performance: '+14.6% CAGR', reasonForExit: 'Portfolio strategy realignment' },
+  { id: 'pf-6', name: 'Invesco India Business Cycle Fund', category: 'Equity — Thematic', joinedDate: '2008', exitedDate: '2014', tenure: '6 yrs', performance: '+15.2% CAGR', reasonForExit: 'Rebalanced to core growth mandates' },
+  { id: 'pf-7', name: 'Invesco India Consumption Fund', category: 'Equity — Consumption', joinedDate: '2007', exitedDate: '2012', tenure: '5 yrs', performance: '+13.2% CAGR', reasonForExit: 'Moved to broader diversified mandates' },
+  { id: 'pf-8', name: 'Invesco India Tax Plan', category: 'Equity — ELSS', joinedDate: '2007', exitedDate: '2012', tenure: '5 yrs', performance: '+12.8% CAGR', reasonForExit: 'Transitioned to HDFC driven lifecycle strategies' },
+  { id: 'pf-9', name: 'Invesco India Equity Fund', category: 'Equity — Large Cap', joinedDate: '2007', exitedDate: '2010', tenure: '3 yrs', performance: '+11.9% CAGR', reasonForExit: 'Portfolio consolidation' },
+  { id: 'pf-10', name: 'Invesco India Growth Opportunities Fund', category: 'Equity — Growth', joinedDate: '2007', exitedDate: '2010', tenure: '3 yrs', performance: '+12.1% CAGR', reasonForExit: 'Portfolio consolidation' },
 ]
 
 export interface NavPoint { date: string; nav: number }
@@ -57,15 +60,15 @@ export interface FundDetail extends FundSummary {
 }
 
 export const fundDetails: Record<string, FundDetail> = {
-  flexicap: {
+  'hdfc-flexi-cap': {
     id: 'f-1',
-    slug: 'flexicap',
-    name: 'HDFC Flexicap Fund',
-    category: 'Equity — Flexicap',
+    slug: 'hdfc-flexi-cap',
+    name: 'HDFC Flexi Cap Fund',
+    category: 'Equity — Flexi Cap',
     aum: '₹18,420 Cr',
     expenseRatio: '0.92%',
     returns1Y: '+22.4%',
-    startDate: '12 Jan 2020',
+    startDate: '31 Oct 2010',
     status: 'Active',
     benchmark: 'Nifty 500 TRI',
     overview: 'An open-ended dynamic equity scheme investing across large, mid, and small-cap companies, designed to capture opportunities across the market-cap spectrum while managing downside risk through disciplined valuation screens.',
@@ -115,11 +118,11 @@ export const fundDetails: Record<string, FundDetail> = {
       { name: 'Key Information Memorandum', type: 'PDF', date: 'Updated Apr 2026' },
     ],
   },
-  'large-midcap': {
-    id: 'f-2', slug: 'large-midcap', name: 'HDFC Large & Midcap Fund', category: 'Equity — Large & Midcap',
-    aum: '₹14,100 Cr', expenseRatio: '0.88%', returns1Y: '+19.7%', startDate: '03 Mar 2020', status: 'Active',
-    benchmark: 'Nifty LargeMidcap 250 TRI',
-    overview: 'Invests a minimum of 35% each in large-cap and mid-cap equities, balancing the stability of established leaders with the growth potential of emerging companies.',
+  'hdfc-focused': {
+    id: 'f-2', slug: 'hdfc-focused', name: 'HDFC Focused Fund', category: 'Equity — Focused',
+    aum: '₹6,830 Cr', expenseRatio: '0.95%', returns1Y: '+24.1%', startDate: '22 Jul 2021', status: 'Active',
+    benchmark: 'Nifty 200 TRI',
+    overview: 'A high-conviction portfolio of up to 30 stocks, concentrated in the manager\'s highest-confidence ideas across market caps.',
     navHistory: [
       { date: 'Jan 2021', nav: 28.1 }, { date: 'Jan 2022', nav: 35.6 }, { date: 'Jan 2023', nav: 38.9 },
       { date: 'Jan 2024', nav: 49.2 }, { date: 'Jan 2025', nav: 58.7 }, { date: 'Jun 2026', nav: 66.4 },
@@ -164,11 +167,11 @@ export const fundDetails: Record<string, FundDetail> = {
       { name: 'Portfolio Disclosure', type: 'XLSX', date: '01 Jun 2026' },
     ],
   },
-  'focused-equity': {
-    id: 'f-3', slug: 'focused-equity', name: 'HDFC Focused Equity Fund', category: 'Equity — Focused',
-    aum: '₹6,830 Cr', expenseRatio: '0.95%', returns1Y: '+24.1%', startDate: '22 Jul 2021', status: 'Active',
-    benchmark: 'Nifty 200 TRI',
-    overview: 'A high-conviction portfolio of up to 30 stocks, concentrated in the manager\'s highest-confidence ideas across market caps.',
+  'business-cycle': {
+    id: 'f-3', slug: 'business-cycle', name: 'HDFC Business Cycle Fund', category: 'Equity — Thematic',
+    aum: '₹3,500 Cr', expenseRatio: '1.02%', returns1Y: '+17.9%', startDate: '14 Feb 2022', status: 'Active',
+    benchmark: 'Nifty 500 TRI',
+    overview: 'Rotates exposure across sectors based on the prevailing phase of the economic cycle, increasing weight in cyclicals during expansion and defensives during contraction.',
     navHistory: [
       { date: 'Jan 2022', nav: 11.2 }, { date: 'Jan 2023', nav: 12.8 }, { date: 'Jan 2024', nav: 16.9 },
       { date: 'Jan 2025', nav: 21.4 }, { date: 'Jun 2026', nav: 26.6 },
@@ -208,11 +211,11 @@ export const fundDetails: Record<string, FundDetail> = {
       { name: 'Factsheet — May 2026', type: 'PDF', date: '01 Jun 2026' },
     ],
   },
-  'business-cycle': {
-    id: 'f-4', slug: 'business-cycle', name: 'HDFC Business Cycle Fund', category: 'Equity — Thematic',
-    aum: '₹3,500 Cr', expenseRatio: '1.02%', returns1Y: '+17.9%', startDate: '14 Feb 2022', status: 'Active',
-    benchmark: 'Nifty 500 TRI',
-    overview: 'Rotates exposure across sectors based on the prevailing phase of the economic cycle, increasing weight in cyclicals during expansion and defensives during contraction.',
+  'hdfc-large-midcap': {
+    id: 'f-4', slug: 'hdfc-large-midcap', name: 'HDFC Large & Midcap Fund', category: 'Equity — Large & Midcap',
+    aum: '₹14,100 Cr', expenseRatio: '0.88%', returns1Y: '+19.7%', startDate: '03 Mar 2020', status: 'Active',
+    benchmark: 'Nifty LargeMidcap 250 TRI',
+    overview: 'Invests a minimum of 35% each in large-cap and mid-cap equities, balancing the stability of established leaders with the growth potential of emerging companies.',
     navHistory: [
       { date: 'Jan 2023', nav: 10.8 }, { date: 'Jan 2024', nav: 13.9 }, { date: 'Jan 2025', nav: 16.7 }, { date: 'Jun 2026', nav: 19.2 },
     ],

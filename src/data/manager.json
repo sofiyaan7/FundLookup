@@ -1,0 +1,31 @@
+{
+  "manager": {
+    "id": "mgr-001",
+    "name": "Amit Ganatra",
+    "designation": "Senior Fund Manager – Equities",
+    "currentAmc": "HDFC Mutual Fund",
+    "companyLogo": "/hdfc-logo.svg",
+    "profileImage": "/amit-ganatra-avatar.svg",
+    "yearsExperience": 23,
+    "verified": true,
+    "location": "Mumbai, India",
+    "languages": ["English", "Hindi"],
+    "email": "amit.ganatra@hdfcfund.com",
+    "website": "https://www.hdfcfund.com/amit-ganatra",
+    "linkedin": "https://www.linkedin.com/in/amit-ganatra-cfa",
+    "twitter": "https://twitter.com/amitganatra",
+    "investmentStyle": "Value Investing | Growth at Reasonable Price (GARP) | Business Cycle Investing | Long-term Wealth Creation",
+    "sectorExpertise": ["Indian Equities", "Financial Services", "Consumer Discretionary", "Healthcare"],
+    "riskPhilosophy": "High-quality businesses, disciplined valuation, and long-term compounding.",
+    "investmentHorizon": "Long Term",
+    "bio": "Amit Ganatra is one of India’s leading equity fund managers with more than two decades of experience in equity research and portfolio management. He specializes in value-oriented investing, business cycle investing, and long-term wealth creation. Before joining HDFC Asset Management Company, he spent nearly thirteen years at Invesco India where he managed several successful equity schemes across market capitalizations. His investment philosophy focuses on high-quality businesses, disciplined valuation, and long-term compounding."
+  },
+  "keyStats": [
+    { "label": "Funds Managed", "value": "16", "numericValue": 16, "icon": "funds" },
+    { "label": "Active Funds", "value": "2", "numericValue": 2, "icon": "active" },
+    { "label": "Exited Funds", "value": "14", "numericValue": 14, "icon": "exited" },
+    { "label": "Managing Since", "value": "31 Oct 2010", "numericValue": 0, "icon": "tenure" },
+    { "label": "Experience", "value": "23", "suffix": " Years", "numericValue": 23, "icon": "experience" },
+    { "label": "Current AMC", "value": "HDFC Mutual Fund", "numericValue": 0, "icon": "amc" }
+  ]
+}

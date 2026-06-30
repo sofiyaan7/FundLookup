@@ -8,9 +8,13 @@ export function ProfileHero() {
       <div className="relative flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
         <div className="flex flex-col gap-5 sm:flex-row sm:items-center">
           <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-2xl bg-gradient-to-br from-accent/30 to-accent2/30 ring-1 ring-border">
-            <div className="flex h-full w-full items-center justify-center font-display text-3xl font-bold text-white">
-              {manager.name.split(' ').map((n) => n[0]).join('')}
-            </div>
+            {manager.profileImage ? (
+              <img src={manager.profileImage} alt={manager.name} className="h-full w-full object-cover" />
+            ) : (
+              <div className="flex h-full w-full items-center justify-center font-display text-3xl font-bold text-white">
+                {manager.name.split(' ').map((n) => n[0]).join('')}
+              </div>
+            )}
           </div>
 
           <div>
@@ -26,9 +30,13 @@ export function ProfileHero() {
 
             <div className="mt-3 flex flex-wrap items-center gap-2 text-sm">
               <span className="chip">
-                <span className="h-4 w-4 rounded-[4px] bg-accent2/20 text-[9px] font-bold leading-4 text-accent2 text-center">
-                  {manager.companyLogo[0]}
-                </span>
+                {manager.companyLogo ? (
+                  <img src={manager.companyLogo} alt={manager.currentAmc} className="h-4 w-4 rounded-[4px] object-contain" />
+                ) : (
+                  <span className="h-4 w-4 rounded-[4px] bg-accent2/20 text-[9px] font-bold leading-4 text-accent2 text-center">
+                    {manager.currentAmc.slice(0, 1)}
+                  </span>
+                )}
                 {manager.currentAmc}
               </span>
               <span className="chip">{manager.yearsExperience} yrs experience</span>

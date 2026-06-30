@@ -22,8 +22,12 @@ export function CareerTimeline() {
               {!isLast && (
                 <span className="absolute left-[15px] top-9 h-[calc(100%-20px)] w-px bg-border" />
               )}
-              <div className="relative z-10 mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-border bg-card text-[10px] font-bold text-accent2">
-                {entry.companyLogo.slice(0, 2)}
+              <div className="relative z-10 mt-1 flex h-8 w-8 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-border bg-card text-[10px] font-bold text-accent2">
+                {entry.companyLogo.startsWith('/') ? (
+                  <img src={entry.companyLogo} alt={entry.company} className="h-full w-full object-cover" />
+                ) : (
+                  entry.companyLogo.slice(0, 2)
+                )}
               </div>
 
               <div className="flex-1">
@@ -34,7 +38,7 @@ export function CareerTimeline() {
                   <div>
                     <p className="font-display text-sm font-semibold">{entry.title}</p>
                     <p className="text-sm text-accent2">{entry.company}</p>
-                    <p className="mt-0.5 text-xs text-muted-fg">{entry.startYear} – {entry.endYear}</p>
+                    <p className="mt-0.5 text-xs text-muted-fg">{entry.period}</p>
                   </div>
                   <motion.span animate={{ rotate: isOpen ? 180 : 0 }} transition={{ duration: 0.25 }} className="mt-1 shrink-0 text-muted-fg">
                     <ChevronDown size={16} />

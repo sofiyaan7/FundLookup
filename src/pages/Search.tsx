@@ -14,7 +14,8 @@ export default function SearchPage() {
       (m) =>
         m.name.toLowerCase().includes(q) ||
         m.amc.toLowerCase().includes(q) ||
-        m.designation.toLowerCase().includes(q)
+        m.designation.toLowerCase().includes(q) ||
+        (m.searchText ?? '').toLowerCase().includes(q)
     )
   }, [query])
 

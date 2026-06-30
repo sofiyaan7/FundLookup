@@ -1,0 +1,150 @@
+{
+  "currentFunds": [
+    { "id": "f-1", "slug": "hdfc-flexi-cap", "name": "HDFC Flexi Cap Fund", "category": "Equity — Flexi Cap", "aum": "₹18,420 Cr", "expenseRatio": "0.92%", "returns1Y": "+22.4%", "startDate": "31 Oct 2010", "status": "Active" },
+    { "id": "f-2", "slug": "hdfc-focused", "name": "HDFC Focused Fund", "category": "Equity — Focused", "aum": "₹6,830 Cr", "expenseRatio": "0.95%", "returns1Y": "+24.1%", "startDate": "22 Jul 2021", "status": "Active" }
+  ],
+  "previousFunds": [
+    { "id": "pf-1", "name": "HDFC ELSS Tax Saver Fund", "category": "Equity — ELSS", "joinedDate": "2020", "exitedDate": "2021", "tenure": "1 yr", "performance": "+16.8% CAGR", "reasonForExit": "Reallocated to newer flagship mandates" },
+    { "id": "pf-2", "name": "HDFC Value Fund", "category": "Equity — Value", "joinedDate": "2020", "exitedDate": "2021", "tenure": "1 yr", "performance": "+15.4% CAGR", "reasonForExit": "Transitioned to focused strategy allocation" },
+    { "id": "pf-3", "name": "Invesco India Contra Fund", "category": "Equity — Contra", "joinedDate": "2014", "exitedDate": "2020", "tenure": "6 yrs", "performance": "+13.9% CAGR", "reasonForExit": "Transitioned to HDFC Mutual Fund" },
+    { "id": "pf-4", "name": "Invesco India Mid Cap Fund", "category": "Equity — Midcap", "joinedDate": "2012", "exitedDate": "2020", "tenure": "8 yrs", "performance": "+16.1% CAGR", "reasonForExit": "Transitioned to HDFC Mutual Fund" },
+    { "id": "pf-5", "name": "Invesco India Large & Mid Cap Fund", "category": "Equity — Large & Midcap", "joinedDate": "2009", "exitedDate": "2014", "tenure": "5 yrs", "performance": "+14.6% CAGR", "reasonForExit": "Portfolio strategy realignment" },
+    { "id": "pf-6", "name": "Invesco India Business Cycle Fund", "category": "Equity — Thematic", "joinedDate": "2008", "exitedDate": "2014", "tenure": "6 yrs", "performance": "+15.2% CAGR", "reasonForExit": "Rebalanced to core growth mandates" },
+    { "id": "pf-7", "name": "Invesco India Consumption Fund", "category": "Equity — Consumption", "joinedDate": "2007", "exitedDate": "2012", "tenure": "5 yrs", "performance": "+13.2% CAGR", "reasonForExit": "Moved to broader diversified mandates" },
+    { "id": "pf-8", "name": "Invesco India Tax Plan", "category": "Equity — ELSS", "joinedDate": "2007", "exitedDate": "2012", "tenure": "5 yrs", "performance": "+12.8% CAGR", "reasonForExit": "Transitioned to HDFC driven lifecycle strategies" },
+    { "id": "pf-9", "name": "Invesco India Equity Fund", "category": "Equity — Large Cap", "joinedDate": "2007", "exitedDate": "2010", "tenure": "3 yrs", "performance": "+11.9% CAGR", "reasonForExit": "Portfolio consolidation" },
+    { "id": "pf-10", "name": "Invesco India Growth Opportunities Fund", "category": "Equity — Growth", "joinedDate": "2007", "exitedDate": "2010", "tenure": "3 yrs", "performance": "+12.1% CAGR", "reasonForExit": "Portfolio consolidation" }
+  ],
+  "fundDetails": {
+    "hdfc-flexi-cap": {
+      "id": "f-1",
+      "slug": "hdfc-flexi-cap",
+      "name": "HDFC Flexi Cap Fund",
+      "category": "Equity — Flexi Cap",
+      "aum": "₹18,420 Cr",
+      "expenseRatio": "0.92%",
+      "returns1Y": "+22.4%",
+      "startDate": "31 Oct 2010",
+      "status": "Active",
+      "benchmark": "Nifty 500 TRI",
+      "overview": "An open-ended dynamic equity scheme investing across large, mid, and small-cap companies, designed to capture opportunities across the market-cap spectrum while managing downside risk through disciplined valuation screens.",
+      "navHistory": [
+        { "date": "Jan 2021", "nav": 32.4 },
+        { "date": "Jan 2022", "nav": 41.8 },
+        { "date": "Jan 2023", "nav": 44.2 },
+        { "date": "Jan 2024", "nav": 56.7 },
+        { "date": "Jan 2025", "nav": 68.3 },
+        { "date": "Jun 2026", "nav": 79.1 }
+      ],
+      "aumHistory": [
+        { "year": "2021", "aum": 4200 },
+        { "year": "2022", "aum": 7600 },
+        { "year": "2023", "aum": 10800 },
+        { "year": "2024", "aum": 14500 },
+        { "year": "2025", "aum": 16900 },
+        { "year": "2026", "aum": 18420 }
+      ],
+      "returnsTable": [
+        { "period": "1 Year", "fund": "22.4%", "benchmark": "18.1%", "category": "17.6%" },
+        { "period": "3 Years", "fund": "19.8%", "benchmark": "15.9%", "category": "15.2%" },
+        { "period": "5 Years", "fund": "18.4%", "benchmark": "14.7%", "category": "14.1%" },
+        { "period": "Since Inception", "fund": "18.4%", "benchmark": "13.9%", "category": "13.5%" }
+      ],
+      "sectorAllocation": [
+        { "sector": "Financial Services", "weight": 28.4 },
+        { "sector": "Information Technology", "weight": 17.2 },
+        { "sector": "Consumer Discretionary", "weight": 13.6 },
+        { "sector": "Healthcare", "weight": 10.1 },
+        { "sector": "Industrials", "weight": 9.3 },
+        { "sector": "Energy", "weight": 7.8 },
+        { "sector": "Others", "weight": 13.6 }
+      ],
+      "topHoldings": [
+        { "name": "HDFC Bank Ltd", "sector": "Financial Services", "weight": 8.2 },
+        { "name": "ICICI Bank Ltd", "sector": "Financial Services", "weight": 6.7 },
+        { "name": "Infosys Ltd", "sector": "Information Technology", "weight": 5.9 },
+        { "name": "Reliance Industries Ltd", "sector": "Energy", "weight": 5.1 },
+        { "name": "Larsen & Toubro Ltd", "sector": "Industrials", "weight": 4.4 },
+        { "name": "Titan Company Ltd", "sector": "Consumer Discretionary", "weight": 3.8 }
+      ],
+      "riskMetrics": [
+        { "label": "Standard Deviation", "value": "14.2%" },
+        { "label": "Sharpe Ratio", "value": "1.18" },
+        { "label": "Beta", "value": "0.94" },
+        { "label": "Alpha", "value": "4.1%" },
+        { "label": "Sortino Ratio", "value": "1.62" },
+        { "label": "Max Drawdown", "value": "-19.4%" }
+      ],
+      "documents": [
+        { "name": "Scheme Information Document", "type": "PDF", "date": "Updated May 2026" },
+        { "name": "Factsheet — May 2026", "type": "PDF", "date": "01 Jun 2026" },
+        { "name": "Portfolio Disclosure", "type": "XLSX", "date": "01 Jun 2026" },
+        { "name": "Key Information Memorandum", "type": "PDF", "date": "Updated Apr 2026" }
+      ]
+    },
+    "hdfc-focused": {
+      "id": "f-2",
+      "slug": "hdfc-focused",
+      "name": "HDFC Focused Fund",
+      "category": "Equity — Focused",
+      "aum": "₹6,830 Cr",
+      "expenseRatio": "0.95%",
+      "returns1Y": "+24.1%",
+      "startDate": "22 Jul 2021",
+      "status": "Active",
+      "benchmark": "Nifty 200 TRI",
+      "overview": "A high-conviction portfolio of up to 30 stocks, concentrated in the manager's highest-confidence ideas across market caps.",
+      "navHistory": [
+        { "date": "Jan 2021", "nav": 28.1 },
+        { "date": "Jan 2022", "nav": 35.6 },
+        { "date": "Jan 2023", "nav": 38.9 },
+        { "date": "Jan 2024", "nav": 49.2 },
+        { "date": "Jan 2025", "nav": 58.7 },
+        { "date": "Jun 2026", "nav": 66.4 }
+      ],
+      "aumHistory": [
+        { "year": "2021", "aum": 3100 },
+        { "year": "2022", "aum": 5800 },
+        { "year": "2023", "aum": 8400 },
+        { "year": "2024", "aum": 11200 },
+        { "year": "2025", "aum": 12900 },
+        { "year": "2026", "aum": 14100 }
+      ],
+      "returnsTable": [
+        { "period": "1 Year", "fund": "19.7%", "benchmark": "17.2%", "category": "16.8%" },
+        { "period": "3 Years", "fund": "17.9%", "benchmark": "15.1%", "category": "14.6%" },
+        { "period": "5 Years", "fund": "16.8%", "benchmark": "13.8%", "category": "13.4%" },
+        { "period": "Since Inception", "fund": "16.5%", "benchmark": "13.2%", "category": "12.9%" }
+      ],
+      "sectorAllocation": [
+        { "sector": "Financial Services", "weight": 24.8 },
+        { "sector": "Information Technology", "weight": 14.5 },
+        { "sector": "Industrials", "weight": 13.9 },
+        { "sector": "Consumer Discretionary", "weight": 12.2 },
+        { "sector": "Healthcare", "weight": 9.7 },
+        { "sector": "Materials", "weight": 8.4 },
+        { "sector": "Others", "weight": 16.5 }
+      ],
+      "topHoldings": [
+        { "name": "ICICI Bank Ltd", "sector": "Financial Services", "weight": 7.1 },
+        { "name": "HDFC Bank Ltd", "sector": "Financial Services", "weight": 6.4 },
+        { "name": "Larsen & Toubro Ltd", "sector": "Industrials", "weight": 5.2 },
+        { "name": "TVS Motor Company", "sector": "Consumer Discretionary", "weight": 4.1 },
+        { "name": "Persistent Systems", "sector": "Information Technology", "weight": 3.6 }
+      ],
+      "riskMetrics": [
+        { "label": "Standard Deviation", "value": "15.8%" },
+        { "label": "Sharpe Ratio", "value": "1.04" },
+        { "label": "Beta", "value": "0.98" },
+        { "label": "Alpha", "value": "2.9%" },
+        { "label": "Sortino Ratio", "value": "1.41" },
+        { "label": "Max Drawdown", "value": "-22.1%" }
+      ],
+      "documents": [
+        { "name": "Scheme Information Document", "type": "PDF", "date": "Updated May 2026" },
+        { "name": "Factsheet — May 2026", "type": "PDF", "date": "01 Jun 2026" },
+        { "name": "Portfolio Disclosure", "type": "XLSX", "date": "01 Jun 2026" }
+      ]
+    }
+  }
+}
