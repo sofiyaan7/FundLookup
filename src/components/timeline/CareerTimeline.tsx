@@ -22,13 +22,17 @@ export function CareerTimeline() {
               {!isLast && (
                 <span className="absolute left-[15px] top-9 h-[calc(100%-20px)] w-px bg-border" />
               )}
-              <div className="relative z-10 mt-1 flex h-8 w-8 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-border bg-card text-[10px] font-bold text-accent2">
+              <motion.div
+                whileHover={{ scale: 1.08, rotate: 2 }}
+                transition={{ type: 'spring', stiffness: 260, damping: 18 }}
+                className="relative z-10 mt-1 flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-accent/30 bg-gradient-to-br from-accent/20 to-accent2/20 text-[10px] font-black tracking-[0.2em] text-accent shadow-[0_0_18px_rgba(56,189,248,0.16)]"
+              >
                 {entry.companyLogo.startsWith('/') ? (
                   <img src={entry.companyLogo} alt={entry.company} className="h-full w-full object-cover" />
                 ) : (
                   entry.companyLogo.slice(0, 2)
                 )}
-              </div>
+              </motion.div>
 
               <div className="flex-1">
                 <button
@@ -76,7 +80,13 @@ export function CareerTimeline() {
                             <p className="mb-1.5 text-xs font-semibold uppercase tracking-wide text-muted-fg">Funds Managed</p>
                             <div className="flex flex-wrap gap-1.5">
                               {entry.fundsManaged.map((f) => (
-                                <span key={f} className="chip">{f}</span>
+                                <motion.span
+                                  key={f}
+                                  whileHover={{ scale: 1.04, y: -1 }}
+                                  className="inline-flex items-center rounded-full border border-accent/40 bg-accent/10 px-2.5 py-1 text-[11px] font-semibold text-accent shadow-[0_0_12px_rgba(56,189,248,0.12)]"
+                                >
+                                  {f}
+                                </motion.span>
                               ))}
                             </div>
                           </div>

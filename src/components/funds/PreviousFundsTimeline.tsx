@@ -20,13 +20,14 @@ export function PreviousFundsTimeline() {
                   <p className="text-sm font-semibold">{f.name}</p>
                   <p className="text-xs text-muted-fg">{f.category}</p>
                 </div>
-                <span className="chip border-accent2/30 text-accent2">{f.performance}</span>
+                <span className="chip border-accent2/30 text-accent2">{f.overallReturn}</span>
               </div>
-              <div className="mt-3 grid grid-cols-2 gap-3 text-[13px] sm:grid-cols-4">
-                <Stat label="Joined" value={f.joinedDate} />
-                <Stat label="Exited" value={f.exitedDate} />
+              <div className="mt-3 grid grid-cols-2 gap-3 text-[13px] sm:grid-cols-3 lg:grid-cols-5">
+                <Stat label="Period" value={f.period} />
                 <Stat label="Tenure" value={f.tenure} />
-                <Stat label="Reason" value={f.reasonForExit} />
+                <Stat label="Overall Return" value={f.overallReturn} />
+                <Stat label="Start AUM" value={f.startAum} />
+                <Stat label="Exit AUM" value={f.exitAum} />
               </div>
             </div>
           </div>

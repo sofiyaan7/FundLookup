@@ -6,9 +6,9 @@ export interface Education {
 }
 
 export const education: Education[] = [
-  { id: 'edu-1', institution: 'CFA Institute, USA', degree: 'Chartered Financial Analyst (CFA)', year: 'Confirmed' },
-  { id: 'edu-2', institution: 'Institute of Chartered Accountants of India (ICAI)', degree: 'Chartered Accountant (CA)', year: 'Confirmed' },
-  { id: 'edu-3', institution: 'University of Mumbai', degree: 'Master of Commerce (M.Com)', year: 'Confirmed' },
+  { id: 'edu-1', institution: 'CFA Institute, USA', degree: 'Chartered Financial Analyst (CFA)', year: '2016' },
+  { id: 'edu-2', institution: 'Institute of Chartered Accountants of India (ICAI)', degree: 'Chartered Accountant (CA)', year: '2012' },
+  { id: 'edu-3', institution: 'University of Mumbai', degree: 'Master of Commerce (M.Com)', year: '2008' },
 ]
 
 export interface Certification {
@@ -19,9 +19,9 @@ export interface Certification {
 }
 
 export const certifications: Certification[] = [
-  { id: 'cert-1', name: 'CFA', issuer: 'CFA Institute', issueDate: 'Verified' },
-  { id: 'cert-2', name: 'CA', issuer: 'ICAI', issueDate: 'Verified' },
-  { id: 'cert-3', name: 'M.Com', issuer: 'University of Mumbai', issueDate: 'Verified' },
+  { id: 'cert-1', name: 'CFA', issuer: 'CFA Institute', issueDate: '2016' },
+  { id: 'cert-2', name: 'CA', issuer: 'ICAI', issueDate: '2012' },
+  { id: 'cert-3', name: 'M.Com', issuer: 'University of Mumbai', issueDate: '2008' },
 ]
 
 export interface Award {

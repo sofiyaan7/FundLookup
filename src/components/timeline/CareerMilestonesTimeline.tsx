@@ -6,7 +6,7 @@ export function CareerMilestonesTimeline() {
     <div className="panel p-5 lg:p-6">
       <h3 className="mb-6 font-display text-base font-semibold">Career Journey</h3>
       <div className="relative ml-2 space-y-7 border-l border-border pl-6">
-        {careerMilestones.map((m, idx) => (
+        {[...careerMilestones].reverse().map((m, idx) => (
           <motion.div
             key={m.year}
             initial={{ opacity: 0, x: -10 }}

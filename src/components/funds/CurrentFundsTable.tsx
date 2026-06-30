@@ -19,7 +19,7 @@ export function CurrentFundsTable() {
               <th className="px-3 py-3 font-medium">Category</th>
               <th className="px-3 py-3 font-medium">AUM</th>
               <th className="px-3 py-3 font-medium">Expense Ratio</th>
-              <th className="px-3 py-3 font-medium">1Y Returns</th>
+              <th className="px-3 py-3 font-medium">Overall Return</th>
               <th className="px-3 py-3 font-medium">Start Date</th>
               <th className="px-3 py-3 font-medium">Status</th>
               <th className="px-5 py-3 font-medium text-right">Action</th>
@@ -36,7 +36,7 @@ export function CurrentFundsTable() {
                 <td className="px-3 py-3.5 text-muted-fg">{fund.category}</td>
                 <td className="px-3 py-3.5">{fund.aum}</td>
                 <td className="px-3 py-3.5 text-muted-fg">{fund.expenseRatio}</td>
-                <td className="px-3 py-3.5 font-medium text-accent">{fund.returns1Y}</td>
+                <td className="px-3 py-3.5 font-medium text-accent">{fund.overallReturn}</td>
                 <td className="px-3 py-3.5 text-muted-fg">{fund.startDate}</td>
                 <td className="px-3 py-3.5">
                   <span className="chip border-accent/30 text-accent">{fund.status}</span>
