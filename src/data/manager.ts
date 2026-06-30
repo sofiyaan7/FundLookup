@@ -26,7 +26,7 @@ export const manager: Manager = {
   designation: 'Senior Fund Manager – Equities',
   currentAmc: 'HDFC Mutual Fund',
   companyLogo: '/hdfc-logo.svg',
-  profileImage: '/amit-ganatra-avatar.svg',
+  profileImage: '/amit-ganatra-linkedin.jpg',
   yearsExperience: 23,
   verified: true,
   location: 'Mumbai, India',
