@@ -2,7 +2,7 @@ import { useParams, Link } from 'react-router-dom'
 import { ArrowLeft, Download, FileText } from 'lucide-react'
 import { fundDetails } from '@/data/funds'
 import { manager } from '@/data/manager'
-import { NavLineChart, AumBarChart, SectorPieChart } from '@/components/charts/Charts'
+import { AumBarChart, SectorPieChart } from '@/components/charts/Charts'
 
 export default function FundDetails() {
   const { slug } = useParams<{ slug: string }>()
@@ -41,15 +41,9 @@ export default function FundDetails() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-        <div className="panel p-5 lg:p-6">
-          <h3 className="mb-4 font-display text-base font-semibold">NAV History</h3>
-          <NavLineChart data={fund.navHistory} />
-        </div>
-        <div className="panel p-5 lg:p-6">
-          <h3 className="mb-4 font-display text-base font-semibold">AUM Growth (₹ Cr)</h3>
-          <AumBarChart data={fund.aumHistory} />
-        </div>
+      <div className="panel p-5 lg:p-6">
+        <h3 className="mb-4 font-display text-base font-semibold">AUM Growth (₹ Cr)</h3>
+        <AumBarChart data={fund.aumHistory} />
       </div>
 
       <div className="panel overflow-hidden">
@@ -63,7 +57,10 @@ export default function FundDetails() {
                 <th className="px-5 py-3 font-medium">Period</th>
                 <th className="px-3 py-3 font-medium">Fund</th>
                 <th className="px-3 py-3 font-medium">Benchmark</th>
-                <th className="px-3 py-3 font-medium">Category Avg</th>
+                <th className="px-3 py-3 font-medium">Standard Deviation</th>
+                <th className="px-3 py-3 font-medium">Sharpe Ratio</th>
+                <th className="px-3 py-3 font-medium">Alpha</th>
+                <th className="px-3 py-3 font-medium">Beta</th>
               </tr>
             </thead>
             <tbody>
@@ -72,7 +69,10 @@ export default function FundDetails() {
                   <td className="px-5 py-3.5 font-medium">{r.period}</td>
                   <td className="px-3 py-3.5 font-medium text-accent">{r.fund}</td>
                   <td className="px-3 py-3.5 text-muted-fg">{r.benchmark}</td>
-                  <td className="px-3 py-3.5 text-muted-fg">{r.category}</td>
+                  <td className="px-3 py-3.5 text-muted-fg">{r.standardDeviation}</td>
+                  <td className="px-3 py-3.5 text-muted-fg">{r.sharpeRatio}</td>
+                  <td className="px-3 py-3.5 text-muted-fg">{r.alpha}</td>
+                  <td className="px-3 py-3.5 text-muted-fg">{r.beta}</td>
                 </tr>
               ))}
             </tbody>
@@ -115,37 +115,23 @@ export default function FundDetails() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 gap-6 lg:grid-cols-[1fr_1fr]">
-        <div className="panel p-5 lg:p-6">
-          <h3 className="mb-4 font-display text-base font-semibold">Risk Metrics</h3>
-          <div className="grid grid-cols-2 gap-4">
-            {fund.riskMetrics.map((r) => (
-              <div key={r.label} className="rounded-xl border border-border bg-bg/40 p-3">
-                <p className="text-[11px] uppercase tracking-wide text-muted-fg">{r.label}</p>
-                <p className="mt-1 font-display text-lg font-semibold">{r.value}</p>
-              </div>
-            ))}
-          </div>
+      <div className="panel p-5 lg:p-6">
+        <div className="mb-4 flex items-center justify-between">
+          <h3 className="font-display text-base font-semibold">Fund Documents</h3>
         </div>
-
-        <div className="panel p-5 lg:p-6">
-          <div className="mb-4 flex items-center justify-between">
-            <h3 className="font-display text-base font-semibold">Fund Documents</h3>
-          </div>
-          <div className="space-y-2.5">
-            {fund.documents.map((d) => (
-              <div key={d.name} className="flex items-center justify-between rounded-xl border border-border bg-bg/40 px-3.5 py-3">
-                <div className="flex items-center gap-2.5">
-                  <FileText size={16} className="text-accent2" />
-                  <div>
-                    <p className="text-sm font-medium">{d.name}</p>
-                    <p className="text-xs text-muted-fg">{d.type} · {d.date}</p>
-                  </div>
+        <div className="space-y-2.5">
+          {fund.documents.map((d) => (
+            <div key={d.name} className="flex items-center justify-between rounded-xl border border-border bg-bg/40 px-3.5 py-3">
+              <div className="flex items-center gap-2.5">
+                <FileText size={16} className="text-accent2" />
+                <div>
+                  <p className="text-sm font-medium">{d.name}</p>
+                  <p className="text-xs text-muted-fg">{d.type} · {d.date}</p>
                 </div>
-                <Download size={15} className="text-muted-fg" />
               </div>
-            ))}
-          </div>
+              <Download size={15} className="text-muted-fg" />
+            </div>
+          ))}
         </div>
       </div>
 

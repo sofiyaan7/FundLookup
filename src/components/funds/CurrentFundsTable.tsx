@@ -17,9 +17,9 @@ export function CurrentFundsTable() {
             <tr className="border-b border-border text-left text-xs uppercase tracking-wide text-muted-fg">
               <th className="px-5 py-3 font-medium">Fund Name</th>
               <th className="px-3 py-3 font-medium">Category</th>
-              <th className="px-3 py-3 font-medium">AUM</th>
+              <th className="px-3 py-3 font-medium">AUM (₹ Cr)</th>
               <th className="px-3 py-3 font-medium">Expense Ratio</th>
-              <th className="px-3 py-3 font-medium">Overall Return</th>
+              <th className="px-3 py-3 font-medium">Manager Tenure Return</th>
               <th className="px-3 py-3 font-medium">Start Date</th>
               <th className="px-3 py-3 font-medium">Status</th>
               <th className="px-5 py-3 font-medium text-right">Action</th>
@@ -34,9 +34,14 @@ export function CurrentFundsTable() {
               >
                 <td className="px-5 py-3.5 font-medium">{fund.name}</td>
                 <td className="px-3 py-3.5 text-muted-fg">{fund.category}</td>
-                <td className="px-3 py-3.5">{fund.aum}</td>
+                <td className="px-3 py-3.5">{fund.aum.replace(/₹|\s*Cr$/gi, '').trim()}</td>
                 <td className="px-3 py-3.5 text-muted-fg">{fund.expenseRatio}</td>
-                <td className="px-3 py-3.5 font-medium text-accent">{fund.overallReturn}</td>
+                <td className="px-3 py-3.5">
+                  <span className="inline-flex items-center gap-1.5 rounded-full border border-accent/20 bg-accent/10 px-2.5 py-1 font-medium text-accent">
+                    <ArrowUpRight size={14} />
+                    {fund.overallReturn}
+                  </span>
+                </td>
                 <td className="px-3 py-3.5 text-muted-fg">{fund.startDate}</td>
                 <td className="px-3 py-3.5">
                   <span className="chip border-accent/30 text-accent">{fund.status}</span>
