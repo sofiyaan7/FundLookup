@@ -48,7 +48,7 @@ export default function FundDetails() {
 
       <div className="panel overflow-hidden">
         <div className="border-b border-border px-5 py-4">
-          <h3 className="font-display text-base font-semibold">Returns Comparison</h3>
+          <h3 className="font-display text-base font-semibold">Return and Risk Comparison</h3>
         </div>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">

@@ -86,8 +86,9 @@ export const fundDetails: Record<string, FundDetail> = {
     ],
     returnsTable: [
       { period: '1 Year', fund: '22.4%', benchmark: '18.1%', category: '17.6%', standardDeviation: '14.2%', sharpeRatio: '1.18', alpha: '4.1%', beta: '0.94' },
-      { period: '2 Years', fund: '19.8%', benchmark: '15.9%', category: '15.2%', standardDeviation: '13.8%', sharpeRatio: '1.12', alpha: '3.7%', beta: '0.91' },
-      { period: 'Overall Tenure', fund: '18.4%', benchmark: '13.9%', category: '13.5%', standardDeviation: '13.5%', sharpeRatio: '1.09', alpha: '3.4%', beta: '0.89' },
+      { period: '3 Years', fund: '19.8%', benchmark: '15.9%', category: '15.2%', standardDeviation: '13.8%', sharpeRatio: '1.12', alpha: '3.7%', beta: '0.91' },
+      { period: '5 Years', fund: '18.4%', benchmark: '13.9%', category: '13.5%', standardDeviation: '13.5%', sharpeRatio: '1.09', alpha: '3.4%', beta: '0.89' },
+      { period: 'Manager Tenure Return', fund: '18.4%', benchmark: '13.9%', category: '13.5%', standardDeviation: '13.5%', sharpeRatio: '1.09', alpha: '3.4%', beta: '0.89' },
     ],
     sectorAllocation: [
       { sector: 'Financial Services', weight: 28.4 },
@@ -136,8 +137,9 @@ export const fundDetails: Record<string, FundDetail> = {
     ],
     returnsTable: [
       { period: '1 Year', fund: '19.7%', benchmark: '17.2%', category: '16.8%', standardDeviation: '15.8%', sharpeRatio: '1.04', alpha: '2.9%', beta: '0.98' },
-      { period: '2 Years', fund: '17.9%', benchmark: '15.1%', category: '14.6%', standardDeviation: '15.2%', sharpeRatio: '0.99', alpha: '2.6%', beta: '0.95' },
-      { period: 'Overall Tenure', fund: '16.5%', benchmark: '13.2%', category: '12.9%', standardDeviation: '14.9%', sharpeRatio: '0.96', alpha: '2.3%', beta: '0.93' },
+      { period: '3 Years', fund: '17.9%', benchmark: '15.1%', category: '14.6%', standardDeviation: '15.2%', sharpeRatio: '0.99', alpha: '2.6%', beta: '0.95' },
+      { period: '5 Years', fund: '16.5%', benchmark: '13.2%', category: '12.9%', standardDeviation: '14.9%', sharpeRatio: '0.96', alpha: '2.3%', beta: '0.93' },
+      { period: 'Manager Tenure Return', fund: '16.5%', benchmark: '13.2%', category: '12.9%', standardDeviation: '14.9%', sharpeRatio: '0.96', alpha: '2.3%', beta: '0.93' },
     ],
     sectorAllocation: [
       { sector: 'Financial Services', weight: 24.8 },
@@ -184,8 +186,9 @@ export const fundDetails: Record<string, FundDetail> = {
     ],
     returnsTable: [
       { period: '1 Year', fund: '24.1%', benchmark: '18.6%', category: '18.0%', standardDeviation: '16.4%', sharpeRatio: '1.32', alpha: '5.6%', beta: '0.91' },
-      { period: '2 Years', fund: '21.2%', benchmark: '16.4%', category: '15.8%', standardDeviation: '15.9%', sharpeRatio: '1.27', alpha: '5.1%', beta: '0.88' },
-      { period: 'Overall Tenure', fund: '20.6%', benchmark: '15.1%', category: '14.6%', standardDeviation: '15.4%', sharpeRatio: '1.24', alpha: '4.8%', beta: '0.86' },
+      { period: '3 Years', fund: '21.2%', benchmark: '16.4%', category: '15.8%', standardDeviation: '15.9%', sharpeRatio: '1.27', alpha: '5.1%', beta: '0.88' },
+      { period: '5 Years', fund: '20.6%', benchmark: '15.1%', category: '14.6%', standardDeviation: '15.4%', sharpeRatio: '1.24', alpha: '4.8%', beta: '0.86' },
+      { period: 'Manager Tenure Return', fund: '20.6%', benchmark: '15.1%', category: '14.6%', standardDeviation: '15.4%', sharpeRatio: '1.24', alpha: '4.8%', beta: '0.86' },
     ],
     sectorAllocation: [
       { sector: 'Financial Services', weight: 31.2 },
@@ -226,8 +229,9 @@ export const fundDetails: Record<string, FundDetail> = {
     ],
     returnsTable: [
       { period: '1 Year', fund: '17.9%', benchmark: '18.1%', category: '16.4%', standardDeviation: '17.9%', sharpeRatio: '0.96', alpha: '1.4%', beta: '1.06' },
-      { period: '2 Years', fund: '17.1%', benchmark: '16.2%', category: '15.0%', standardDeviation: '17.2%', sharpeRatio: '0.92', alpha: '1.2%', beta: '1.03' },
-      { period: 'Overall Tenure', fund: '17.1%', benchmark: '16.2%', category: '15.0%', standardDeviation: '16.8%', sharpeRatio: '0.89', alpha: '1.0%', beta: '1.01' },
+      { period: '3 Years', fund: '17.1%', benchmark: '16.2%', category: '15.0%', standardDeviation: '17.2%', sharpeRatio: '0.92', alpha: '1.2%', beta: '1.03' },
+      { period: '5 Years', fund: '17.1%', benchmark: '16.2%', category: '15.0%', standardDeviation: '16.8%', sharpeRatio: '0.89', alpha: '1.0%', beta: '1.01' },
+      { period: 'Manager Tenure Return', fund: '17.1%', benchmark: '16.2%', category: '15.0%', standardDeviation: '16.8%', sharpeRatio: '0.89', alpha: '1.0%', beta: '1.01' },
     ],
     sectorAllocation: [
       { sector: 'Industrials', weight: 22.6 },
