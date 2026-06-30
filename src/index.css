@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: #0B0B0F;
+  color: #ffffff;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+html.light body {
+  background-color: #F6F7F9;
+  color: #0B0B0F;
+}
+
+html.light .bg-bg {
+  background-color: #F6F7F9 !important;
+}
+html.light .text-white {
+  color: #0B0B0F !important;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a35;
+  border-radius: 8px;
+}
+html.light ::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+}
+
+:focus-visible {
+  outline: 2px solid #3FB950;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@layer components {
+  .glass {
+    @apply bg-card/70 backdrop-blur-xs border border-border;
+  }
+  html.light .glass {
+    @apply bg-card-light/80 border-border-light;
+  }
+
+  .panel {
+    @apply bg-card border border-border rounded-2xl;
+  }
+  html.light .panel {
+    @apply bg-card-light border-border-light;
+  }
+
+  .text-muted-fg {
+    @apply text-muted;
+  }
+  html.light .text-muted-fg {
+    @apply text-muted-light;
+  }
+
+  .stat-card {
+    @apply panel p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-glow hover:border-accent/40;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-border px-2.5 py-1 text-xs font-medium text-muted;
+  }
+  html.light .chip {
+    @apply border-border-light text-muted-light;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-accent px-4 py-2 text-sm font-semibold text-[#06140a] transition-all hover:bg-accent/90 active:scale-[0.98];
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border border-border px-4 py-2 text-sm font-semibold text-white transition-all hover:border-accent2/60 hover:bg-accent2/10 active:scale-[0.98];
+  }
+  html.light .btn-secondary {
+    @apply border-border-light text-bg;
+  }
+}
+
+@layer utilities {
+  .scrollbar-none::-webkit-scrollbar { display: none; }
+  .scrollbar-none { -ms-overflow-style: none; scrollbar-width: none; }
+}
