@@ -22,10 +22,11 @@ export function PreviousFundsTimeline() {
                 </div>
                 <span className="chip border-accent2/30 text-accent2">{f.overallReturn}</span>
               </div>
-              <div className="mt-3 grid grid-cols-2 gap-3 text-[13px] sm:grid-cols-3 lg:grid-cols-5">
+              <div className="mt-3 grid grid-cols-2 gap-3 text-[13px] sm:grid-cols-3 lg:grid-cols-6">
                 <Stat label="Period" value={f.period} />
                 <Stat label="Tenure" value={f.tenure} />
                 <Stat label="Overall Return" value={f.overallReturn} />
+                <Stat label="Benchmark" value={f.benchmark} />
                 <Stat label="Start AUM" value={f.startAum} />
                 <Stat label="Exit AUM" value={f.exitAum} />
               </div>
