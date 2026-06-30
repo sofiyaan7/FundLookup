@@ -1,4 +1,4 @@
-import { BadgeCheck, Linkedin, Globe } from 'lucide-react'
+import { BadgeCheck } from 'lucide-react'
 import { manager } from '@/data/manager'
 
 export function ProfileHero() {
@@ -45,14 +45,6 @@ export function ProfileHero() {
           </div>
         </div>
 
-        <div className="flex shrink-0 gap-2.5">
-          <a href={manager.linkedin} target="_blank" rel="noreferrer" className="btn-secondary">
-            <Linkedin size={16} /> LinkedIn
-          </a>
-          <a href={manager.website} target="_blank" rel="noreferrer" className="btn-primary">
-            <Globe size={16} /> Website
-          </a>
-        </div>
       </div>
     </div>
   )
