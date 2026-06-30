@@ -9,11 +9,12 @@ const ACCENT2 = '#2F81F7'
 const TEXT_MUTED = '#9CA3AF'
 
 const tooltipStyle = {
-  background: '#13131A',
-  border: '1px solid #22222B',
+  background: '#0F172A',
+  border: '1px solid #38BDF8',
   borderRadius: 12,
+  boxShadow: '0 10px 30px rgba(15, 23, 42, 0.35)',
   fontSize: 12,
-  color: '#fff',
+  color: '#F8FAFC',
 }
 
 export function NavLineChart({ data }: { data: { date: string; nav: number }[] }) {

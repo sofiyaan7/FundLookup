@@ -23,21 +23,22 @@ export interface PreviousFund {
   period: string
   tenure: string
   overallReturn: string
+  benchmark: string
   startAum: string
   exitAum: string
 }
 
 export const previousFunds: PreviousFund[] = [
-  { id: 'pf-1', name: 'HDFC ELSS Tax Saver Fund', category: 'Equity — ELSS', period: '2020–2021', tenure: '1 yr 0 mos', overallReturn: '+16.8%', startAum: '₹1,240 Cr', exitAum: '₹1,560 Cr' },
-  { id: 'pf-2', name: 'HDFC Value Fund', category: 'Equity — Value', period: '2020–2021', tenure: '1 yr 0 mos', overallReturn: '+15.4%', startAum: '₹1,180 Cr', exitAum: '₹1,430 Cr' },
-  { id: 'pf-3', name: 'Invesco India Contra Fund', category: 'Equity — Contra', period: '2014–2020', tenure: '6 yrs 0 mos', overallReturn: '+13.9%', startAum: '₹2,100 Cr', exitAum: '₹3,250 Cr' },
-  { id: 'pf-4', name: 'Invesco India Mid Cap Fund', category: 'Equity — Midcap', period: '2012–2020', tenure: '8 yrs 0 mos', overallReturn: '+16.1%', startAum: '₹1,640 Cr', exitAum: '₹2,880 Cr' },
-  { id: 'pf-5', name: 'Invesco India Large & Mid Cap Fund', category: 'Equity — Large & Midcap', period: '2009–2014', tenure: '5 yrs 0 mos', overallReturn: '+14.6%', startAum: '₹1,320 Cr', exitAum: '₹1,950 Cr' },
-  { id: 'pf-6', name: 'Invesco India Business Cycle Fund', category: 'Equity — Thematic', period: '2008–2014', tenure: '6 yrs 0 mos', overallReturn: '+15.2%', startAum: '₹940 Cr', exitAum: '₹1,460 Cr' },
-  { id: 'pf-7', name: 'Invesco India Consumption Fund', category: 'Equity — Consumption', period: '2007–2012', tenure: '5 yrs 0 mos', overallReturn: '+13.2%', startAum: '₹780 Cr', exitAum: '₹1,120 Cr' },
-  { id: 'pf-8', name: 'Invesco India Tax Plan', category: 'Equity — ELSS', period: '2007–2012', tenure: '5 yrs 0 mos', overallReturn: '+12.8%', startAum: '₹690 Cr', exitAum: '₹1,050 Cr' },
-  { id: 'pf-9', name: 'Invesco India Equity Fund', category: 'Equity — Large Cap', period: '2007–2010', tenure: '3 yrs 0 mos', overallReturn: '+11.9%', startAum: '₹540 Cr', exitAum: '₹810 Cr' },
-  { id: 'pf-10', name: 'Invesco India Growth Opportunities Fund', category: 'Equity — Growth', period: '2007–2010', tenure: '3 yrs 0 mos', overallReturn: '+12.1%', startAum: '₹460 Cr', exitAum: '₹740 Cr' },
+  { id: 'pf-1', name: 'HDFC ELSS Tax Saver Fund', category: 'Equity — ELSS', period: '2020–2021', tenure: '1 yr 0 mos', overallReturn: '+16.8%', benchmark: 'Nifty 500 TRI', startAum: '₹1,240 Cr', exitAum: '₹1,560 Cr' },
+  { id: 'pf-2', name: 'HDFC Value Fund', category: 'Equity — Value', period: '2020–2021', tenure: '1 yr 0 mos', overallReturn: '+15.4%', benchmark: 'Nifty 500 TRI', startAum: '₹1,180 Cr', exitAum: '₹1,430 Cr' },
+  { id: 'pf-3', name: 'Invesco India Contra Fund', category: 'Equity — Contra', period: '2014–2020', tenure: '6 yrs 0 mos', overallReturn: '+13.9%', benchmark: 'Nifty 500 TRI', startAum: '₹2,100 Cr', exitAum: '₹3,250 Cr' },
+  { id: 'pf-4', name: 'Invesco India Mid Cap Fund', category: 'Equity — Midcap', period: '2012–2020', tenure: '8 yrs 0 mos', overallReturn: '+16.1%', benchmark: 'Nifty Midcap 150 TRI', startAum: '₹1,640 Cr', exitAum: '₹2,880 Cr' },
+  { id: 'pf-5', name: 'Invesco India Large & Mid Cap Fund', category: 'Equity — Large & Midcap', period: '2009–2014', tenure: '5 yrs 0 mos', overallReturn: '+14.6%', benchmark: 'Nifty LargeMidcap 250 TRI', startAum: '₹1,320 Cr', exitAum: '₹1,950 Cr' },
+  { id: 'pf-6', name: 'Invesco India Business Cycle Fund', category: 'Equity — Thematic', period: '2008–2014', tenure: '6 yrs 0 mos', overallReturn: '+15.2%', benchmark: 'Nifty 500 TRI', startAum: '₹940 Cr', exitAum: '₹1,460 Cr' },
+  { id: 'pf-7', name: 'Invesco India Consumption Fund', category: 'Equity — Consumption', period: '2007–2012', tenure: '5 yrs 0 mos', overallReturn: '+13.2%', benchmark: 'Nifty 500 TRI', startAum: '₹780 Cr', exitAum: '₹1,120 Cr' },
+  { id: 'pf-8', name: 'Invesco India Tax Plan', category: 'Equity — ELSS', period: '2007–2012', tenure: '5 yrs 0 mos', overallReturn: '+12.8%', benchmark: 'Nifty 500 TRI', startAum: '₹690 Cr', exitAum: '₹1,050 Cr' },
+  { id: 'pf-9', name: 'Invesco India Equity Fund', category: 'Equity — Large Cap', period: '2007–2010', tenure: '3 yrs 0 mos', overallReturn: '+11.9%', benchmark: 'Nifty 100 TRI', startAum: '₹540 Cr', exitAum: '₹810 Cr' },
+  { id: 'pf-10', name: 'Invesco India Growth Opportunities Fund', category: 'Equity — Growth', period: '2007–2010', tenure: '3 yrs 0 mos', overallReturn: '+12.1%', benchmark: 'Nifty 500 TRI', startAum: '₹460 Cr', exitAum: '₹740 Cr' },
 ]
 
 export interface NavPoint { date: string; nav: number }
@@ -84,9 +85,8 @@ export const fundDetails: Record<string, FundDetail> = {
     ],
     returnsTable: [
       { period: '1 Year', fund: '22.4%', benchmark: '18.1%', category: '17.6%' },
-      { period: '3 Years', fund: '19.8%', benchmark: '15.9%', category: '15.2%' },
-      { period: '5 Years', fund: '18.4%', benchmark: '14.7%', category: '14.1%' },
-      { period: 'Since Inception', fund: '18.4%', benchmark: '13.9%', category: '13.5%' },
+      { period: '2 Years', fund: '19.8%', benchmark: '15.9%', category: '15.2%' },
+      { period: 'Overall Tenure', fund: '18.4%', benchmark: '13.9%', category: '13.5%' },
     ],
     sectorAllocation: [
       { sector: 'Financial Services', weight: 28.4 },
@@ -135,9 +135,8 @@ export const fundDetails: Record<string, FundDetail> = {
     ],
     returnsTable: [
       { period: '1 Year', fund: '19.7%', benchmark: '17.2%', category: '16.8%' },
-      { period: '3 Years', fund: '17.9%', benchmark: '15.1%', category: '14.6%' },
-      { period: '5 Years', fund: '16.8%', benchmark: '13.8%', category: '13.4%' },
-      { period: 'Since Inception', fund: '16.5%', benchmark: '13.2%', category: '12.9%' },
+      { period: '2 Years', fund: '17.9%', benchmark: '15.1%', category: '14.6%' },
+      { period: 'Overall Tenure', fund: '16.5%', benchmark: '13.2%', category: '12.9%' },
     ],
     sectorAllocation: [
       { sector: 'Financial Services', weight: 24.8 },
@@ -184,8 +183,8 @@ export const fundDetails: Record<string, FundDetail> = {
     ],
     returnsTable: [
       { period: '1 Year', fund: '24.1%', benchmark: '18.6%', category: '18.0%' },
-      { period: '3 Years', fund: '21.2%', benchmark: '16.4%', category: '15.8%' },
-      { period: 'Since Inception', fund: '20.6%', benchmark: '15.1%', category: '14.6%' },
+      { period: '2 Years', fund: '21.2%', benchmark: '16.4%', category: '15.8%' },
+      { period: 'Overall Tenure', fund: '20.6%', benchmark: '15.1%', category: '14.6%' },
     ],
     sectorAllocation: [
       { sector: 'Financial Services', weight: 31.2 },
@@ -226,7 +225,8 @@ export const fundDetails: Record<string, FundDetail> = {
     ],
     returnsTable: [
       { period: '1 Year', fund: '17.9%', benchmark: '18.1%', category: '16.4%' },
-      { period: 'Since Inception', fund: '17.1%', benchmark: '16.2%', category: '15.0%' },
+      { period: '2 Years', fund: '17.1%', benchmark: '16.2%', category: '15.0%' },
+      { period: 'Overall Tenure', fund: '17.1%', benchmark: '16.2%', category: '15.0%' },
     ],
     sectorAllocation: [
       { sector: 'Industrials', weight: 22.6 },
